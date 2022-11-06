@@ -6,8 +6,11 @@ name=st.text_input("Enter your name")
 hide_menu_style = """
         <style>
         #MainMenu {visibility: hidden;}
+        footer {visibility: hidden;}
+        .stApp { bottom: 60px; }
         </style>
         """
+
 st.markdown(hide_menu_style, unsafe_allow_html=True)
 if name:
     appointment = st.slider(
