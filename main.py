@@ -3,6 +3,12 @@ import pandas as pd
 from datetime import time
 st.header("Dental appointment scheduling dashboard")
 name=st.text_input("Enter your name")
+hide_menu_style = """
+        <style>
+        #MainMenu {visibility: hidden;}
+        </style>
+        """
+st.markdown(hide_menu_style, unsafe_allow_html=True)
 if name:
     appointment = st.slider(
         "Schedule your appointment:",
